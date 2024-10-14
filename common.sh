@@ -7,7 +7,7 @@ script_path=$(pwd)
 app_prerequisites() {
   print_heading "Add Application User"
   id roboshop &>>$log_file
-  if [ $? -ne 0]; then
+  if [ $? -ne 0 ]; then
     useradd roboshop &>>log_file
   fi
   status_check $?
