@@ -23,4 +23,6 @@ deployment using bash script
    - runs systemd_setup
 6. maven_setup
    - Install Maven
-   - Download Application Dependencies 
+   - checks app_prerequisites
+   - Download Application Dependencies
+   - runs systemd_setup 
