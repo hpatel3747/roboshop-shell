@@ -17,7 +17,7 @@ deployment using bash script
    - enable NodeJS 20
    - Install NodeJS
    - Install NodeJS dependencies
-5. python setup
+5. python_setup
    - Install python
    - checks app_prerequisites
    - runs systemd_setup
