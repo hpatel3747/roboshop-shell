@@ -21,7 +21,7 @@ app_prerequisites() {
     curl -L -o /tmp/$app_name.zip https://roboshop-artifacts.s3.amazonaws.com/$app_name-v3.zip &>>$log_file
     status_check $?
 
-  cd /App
+  cd /app
 
   print_heading "Extract Application Content"
     unzip /tmp/$app_name.zip &>>$log_file
