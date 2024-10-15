@@ -16,7 +16,7 @@ status_check $?
 
 for sql_file in schema app-user master-data; do
   print_heading "Load SQL File - $sql_file"
-  mysql -h mysql.hprldevops.online -uroot -p$MYSQL_ROOT_PASSWORD < /app/db/$sql_file.sql &>>$log_file
+  mysql -h mysql.hptldevops.online -uroot -p$MYSQL_ROOT_PASSWORD < /app/db/$sql_file.sql &>>$log_file
   status_check $?
 done
 
